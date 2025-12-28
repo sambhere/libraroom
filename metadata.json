@@ -1,0 +1,7 @@
+{
+  "name": "Libraroom AI",
+  "description": "A productivity-focused study companion with AI notes polishing, smart timer, to-dos, and lofi music.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

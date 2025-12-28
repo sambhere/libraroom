@@ -1,0 +1,34 @@
+
+{
+  "manifest_version": 3,
+  "name": "Libraroom AI: Intelligent Productivity Space",
+  "version": "1.2.0",
+  "description": "An AI-powered academic workspace with focus timer, neural notes, and cloud synchronization.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://*.neon.tech/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' https://esm.sh; object-src 'self'; connect-src 'self' https://generativelanguage.googleapis.com https://*.neon.tech"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Libraroom AI"
+  },
+  "icons": {
+    "16": "https://picsum.photos/seed/libraroom/16/16",
+    "48": "https://picsum.photos/seed/libraroom/48/48",
+    "128": "https://picsum.photos/seed/libraroom/128/128"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

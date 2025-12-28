@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Libraroom AI | AI Powered Workspace for Writing, Research & Productivity</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Libraroom AI is an AI powered workspace for writing, research, note taking, coding, and productivity. One smart AI platform to think, create, and work faster." />
+  <meta name="keywords" content="AI powered workspace, AI workspace, AI productivity tool, AI writing assistant, AI research assistant, AI note taking app, AI study tool, AI for students, AI for creators, AI for developers, all in one AI platform, productivity AI, smart AI workspace" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Libraroom AI | AI Powered Productivity Workspace" />
+  <meta property="og:description" content="An AI powered workspace for writing, research, notes, coding, and deep work. Built to boost focus and productivity." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://libraroom.ai" />
+  <meta property="og:site_name" content="Libraroom AI" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Libraroom AI | AI Powered Workspace" />
+  <meta name="twitter:description" content="Write, research, and work smarter with an AI powered productivity workspace." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains_Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #020617;
+      color: #f8fafc;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Premium Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(2, 6, 23, 0.5);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(99, 102, 241, 0.2);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(99, 102, 241, 0.4);
+    }
+
+    .zen-glass {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .dashboard-card {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes slow-pan {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .bg-animate {
+      background: radial-gradient(circle at 20% 30%, #1e1b4b 0%, transparent 40%),
+                  radial-gradient(circle at 80% 70%, #1e1b4b 0%, transparent 40%),
+                  #020617;
+      background-size: 200% 200%;
+      animation: slow-pan 30s ease infinite;
+      background-attachment: fixed;
+    }
+
+    .neon-text-indigo { text-shadow: 0 0 15px rgba(99, 102, 241, 0.4); }
+  </style>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "@neondatabase/serverless": "https://esm.sh/@neondatabase/serverless@^1.0.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-animate">
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
